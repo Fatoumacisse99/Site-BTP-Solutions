@@ -10,16 +10,17 @@
     <header>
        <div class="container">
         <div>
-            <img src="assets/images/logo-site.png" alt="logo du site">
+            <img class="logo-header" src="assets/images/logo-site.png" alt="logo du site">
         </div>
         <nav>
         <ul class="menu">
-          <li><a href="#home">Accueil</a></li>
+          <li><a href="#accueil">Accueil</a></li>
           <li><a href="#services">Services</a></li>
-          <li><a href="#nous">À propos</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#nos-propos">À propos</a></li>
+          <li><a href="#contenair-contact">Contact</a></li>
  
         </ul>
+        <div class="toggle-menu"></div>
         </nav>
        </div>
     </header>
@@ -51,10 +52,10 @@
             </div>
         </div>
     </section>
-    <section id="nos-propos">
+    <section id="   ">
         <h1 class="titre-principal">À propos de nous</h1>
         <div class="ligne"></div>
-        <div class="conteanire-nos-propos">
+        <div class="container-nos-propos">
             <div class="left">
                 <p>BTP Solutions est une entreprise de Bâtiment et Travaux Publics dédiée à la réalisation de projets d'infrastructures de haute qualité. Avec une équipe d'experts passionnés et expérimentés, nous nous engageons à fournir des solutions innovantes et durables pour répondre aux besoins de nos clients.</p>
             </div>
@@ -130,7 +131,8 @@
           <div class="contact-disposition">
             <img class="img-logo" src="assets/images/numero.png" alt="numero icon">
             <p>+123 4567 890</p>
-          </div></div>
+          </div>
+         </div>
         </div>
         <div class="container-list">
             
@@ -160,5 +162,14 @@
             </div>
         </div>
     </footer>
+    <script>
+        var small_menu = document.querySelector(".toggle-menu");
+        var menu = document.querySelector(".menu");
+  
+        small_menu.onclick = function () {
+          small_menu.classList.toggle("active");
+          menu.classList.toggle("responsive");
+        };
+      </script>
 </body>
 </html>
